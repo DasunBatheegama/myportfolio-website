@@ -300,10 +300,9 @@ img {
 
 .dynamic-text::after {
   content: "|";
-  position: absolute;
-  right: -8px;
   animation: blink 0.7s infinite;
   color: var(--title-color);
+  margin-left: 2px;
 }
 
 @keyframes blink {
