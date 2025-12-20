@@ -184,6 +184,19 @@ sr.reveal('.skills_content:nth-child(2), .contact_content:nth-child(2)', { origi
 sr.reveal('.qualification_content, .services_card', { interval: 100 })
 sr.reveal('.links__content', { delay: 400, interval: 50 })
 
+// About section animations
+sr.reveal('.section__title', { origin: 'top', distance: '30px', duration: 1500, delay: 200 })
+sr.reveal('.section__subtitle', { origin: 'top', distance: '20px', duration: 1500, delay: 300 })
+sr.reveal('.about__data', { origin: 'left', distance: '60px', duration: 2000, delay: 400 })
+sr.reveal('.about__overline', { origin: 'left', distance: '30px', duration: 1500, delay: 500 })
+sr.reveal('.about__heading', { origin: 'left', distance: '30px', duration: 1500, delay: 600 })
+sr.reveal('.about__description', { origin: 'left', distance: '30px', duration: 1500, delay: 700 })
+sr.reveal('.about__item', { origin: 'left', distance: '30px', duration: 1500, delay: 800, interval: 150 })
+sr.reveal('.about__card', { origin: 'bottom', distance: '40px', duration: 1800, delay: 1000, interval: 200 })
+sr.reveal('.about__buttons', { origin: 'bottom', distance: '30px', duration: 1500, delay: 1200 })
+sr.reveal('.about__visual', { origin: 'right', distance: '60px', duration: 2000, delay: 500 })
+sr.reveal('.floating-pill', { origin: 'right', distance: '30px', duration: 1500, delay: 900, interval: 200 })
+
 /*=============== LOADER ===============*/
 // Initialize Lottie loader and hide after short delay
 const initLottieLoader = () => {
