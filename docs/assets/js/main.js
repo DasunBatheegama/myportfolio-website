@@ -238,7 +238,14 @@ const initLottieLoader = () => {
   `
 }
 
-document.addEventListener('DOMContentLoaded', initLottieLoader)
+// Wait for both DOM and custom element to be defined
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(initLottieLoader, 100)
+  })
+} else {
+  setTimeout(initLottieLoader, 100)
+}
 
 window.addEventListener('load', () => {
   const loader = document.querySelector('.loader')
