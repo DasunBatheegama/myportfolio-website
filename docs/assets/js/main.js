@@ -220,31 +220,22 @@ sr.reveal('.qualification__tags', { origin: 'bottom', distance: '20px', duration
 const initLottieLoader = () => {
   const loader = document.querySelector('.loader')
   if (!loader) return
-  // Replace existing loader content with Lottie container + text
+  // Replace existing loader content with dotLottie web component + text
   loader.innerHTML = `
     <div class="loader__box">
-      <div id="lottie-loader" class="lottie" aria-hidden="true"></div>
+      <dotlottie-wc
+        src="https://lottie.host/1c24d4e1-8f2f-45dc-a05b-200f168befeb/5XA6NwXjXR.lottie"
+        style="width: 150px; height: 150px"
+        autoplay
+        loop
+        aria-hidden="true"
+      ></dotlottie-wc>
       <div class="loader__text" role="status" aria-live="polite">
         <h2 class="loader__title">AI Engineer | Dasun Batheegama</h2>
         <p class="loader__subtitle">Loading portfolio…</p>
       </div>
     </div>
   `
-
-  if (window.lottie) {
-    try {
-      window.lottie.loadAnimation({
-        container: document.getElementById('lottie-loader'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        // Modern minimal loader animation
-        path: 'https://assets9.lottiefiles.com/packages/lf20_j1adxtyb.json'
-      })
-    } catch (e) {
-      // ignore
-    }
-  }
 }
 
 document.addEventListener('DOMContentLoaded', initLottieLoader)
