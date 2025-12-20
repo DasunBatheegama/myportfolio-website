@@ -179,9 +179,9 @@ const scrollHeader = () => {
 const sr = ScrollReveal({ origin: 'top', distance: '50px', duration: 2500, delay: 400 })
 sr.reveal('.home_data, .projects_container, .comments_container, .footer_container')
 sr.reveal('.home_info', { delay: 600, origin: 'bottom', interval: 100 })
-sr.reveal('.skills_content:nth-child(1), .contact_content:nth-child(1)', { origin: 'left' })
-sr.reveal('.skills_content:nth-child(2), .contact_content:nth-child(2)', { origin: 'right' })
-sr.reveal('.qualification_content, .services_card', { interval: 100 })
+sr.reveal('.contact_content:nth-child(1)', { origin: 'left' })
+sr.reveal('.contact_content:nth-child(2)', { origin: 'right' })
+sr.reveal('.services_card', { interval: 100 })
 sr.reveal('.links__content', { delay: 400, interval: 50 })
 
 // About section animations
@@ -196,6 +196,24 @@ sr.reveal('.about__card', { origin: 'bottom', distance: '40px', duration: 1800, 
 sr.reveal('.about__buttons', { origin: 'bottom', distance: '30px', duration: 1500, delay: 1200 })
 sr.reveal('.about__visual', { origin: 'right', distance: '60px', duration: 2000, delay: 500 })
 sr.reveal('.floating-pill', { origin: 'right', distance: '30px', duration: 1500, delay: 900, interval: 200 })
+
+// Skills section animations
+sr.reveal('.skills__title', { origin: 'top', distance: '30px', duration: 1500, delay: 400 })
+sr.reveal('.skills_content:nth-child(1)', { origin: 'left', distance: '60px', duration: 2000, delay: 500 })
+sr.reveal('.skills_content:nth-child(2)', { origin: 'right', distance: '60px', duration: 2000, delay: 500 })
+sr.reveal('.skills_content:nth-child(1) .skills__data', { origin: 'left', distance: '30px', duration: 1500, delay: 700, interval: 150 })
+sr.reveal('.skills_content:nth-child(2) .skills__data', { origin: 'right', distance: '30px', duration: 1500, delay: 700, interval: 150 })
+sr.reveal('.skills__blob', { origin: 'bottom', distance: '20px', duration: 1200, delay: 800, interval: 100 })
+
+// Qualifications section animations
+sr.reveal('.qualification__section-title', { origin: 'left', distance: '40px', duration: 1500, delay: 400, interval: 200 })
+sr.reveal('.qualification__item', { origin: 'bottom', distance: '50px', duration: 1800, delay: 600, interval: 300 })
+sr.reveal('.qualification__dot', { origin: 'left', distance: '20px', duration: 1000, delay: 700, interval: 300 })
+sr.reveal('.qualification__card', { origin: 'right', distance: '40px', duration: 1500, delay: 800, interval: 300 })
+sr.reveal('.qualification__card-title', { origin: 'top', distance: '20px', duration: 1200, delay: 900, interval: 300 })
+sr.reveal('.qualification__place', { origin: 'left', distance: '20px', duration: 1000, delay: 1000, interval: 300 })
+sr.reveal('.qualification__list li', { origin: 'left', distance: '20px', duration: 1000, delay: 1100, interval: 150 })
+sr.reveal('.qualification__tags', { origin: 'bottom', distance: '20px', duration: 1000, delay: 1200, interval: 300 })
 
 /*=============== LOADER ===============*/
 // Initialize Lottie loader and hide after short delay
