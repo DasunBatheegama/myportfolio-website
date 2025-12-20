@@ -344,7 +344,7 @@ img {
 .hero__scroll-down {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   animation: bounce 2s infinite;
   cursor: pointer;
   text-decoration: none;
@@ -757,7 +757,7 @@ body.dark_theme {
 
 .section__border {
   border-bottom: 1px solid var(--title-color);
-  padding-bottom: 3.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .section__title,
