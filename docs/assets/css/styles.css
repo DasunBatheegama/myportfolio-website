@@ -2612,9 +2612,9 @@ body.dark_theme {
 
 .about__img {
   width: 280px;
-  margin-bottom: -1rem;
-  /* Slight overlap */
-  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .floating-pill {
